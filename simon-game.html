@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Calculator</title>
+  <title>Matt Dobie | Simon Game</title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="style.min.css" rel="stylesheet">
@@ -14,22 +14,47 @@
 
 <body>
   
+  <div class="wrapper">
   <div class="game text-center">
     <div class="main-buttons">
       <div class="br">
-        <div class="button" id="green">
-        </div><div class="button" id="red">
+        <div class="button-main" id="green" val="0">
+        </div><div class="button-main" id="red" val="1">
         </div>
       </div>
       <div class="br">
-        <div class="button" id="yellow">
-        </div><div class="button" id="blue">
+        <div class="button-main" id="yellow" val="3">
+        </div><div class="button-main" id="blue" val="2">
         </div>
       </div>
     </div>
     <div class="center">
       <h1>Simon<sup>&#174;</sup></h1>
+      <div class="display">
+        <div class="btn-box">
+          <button id="start"></button>
+          <h3>START</h3>
+        </div>
+        <div class="count-box">
+          <h2 class="count">--</h2>
+          <h3>COUNT</h3>
+        </div>
+        <div class="btn-box">
+          <div class="led"></div>
+          <button id="strict"></button>
+          <h3>STRICT</h3>
+        </div>
+      </div>
+      <div class="switch-row">
+        <h3>OFF</h3>
+        <div class="switch-slot">
+          <div class="switch">
+          </div>
+        </div>
+        <h3>ON</h3>
+      </div>
     </div>
+  </div>
   </div>
 
   <footer>
