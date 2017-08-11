@@ -1,3 +1,10 @@
+/*
+  Author: Matthew Dobie
+  Author URL: mattdobie.com
+  Description: Styles for simple Simon Game
+*/
+
+
 $background: #667484;
 $game: #1b1f23;
 $green: #00a74a;
@@ -6,7 +13,6 @@ $yellow: #cca707;
 $blue: #094a8f;
 $red-button: #ff4c4c;
 $yellow-button: #fed93f;
-
 
 * {
   margin: 0;
@@ -25,7 +31,7 @@ body {
 .wrapper {
   width: 500px;
   height: 500px;
-  margin: 40px auto;
+  margin: 8vh auto;
 }
 
 .game {
@@ -142,7 +148,7 @@ body {
 .count-box {
   display: inline-block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 10px 0 12px;
 }
 
 .count {
@@ -193,19 +199,18 @@ body {
 }
 
 footer {
-  margin-top: 60px;
+  margin-top: 1vh;
   font-family: 'Orbitron', sans-serif;
   p {
     font-size: 12px;
     letter-spacing: 1px;
     a {
       text-decoration: none;
-      font-style: italic;
       &:hover {
         text-decoration: underline;
       }
       &:visited {
-        color: white;
+        color: $game;
       }
     }
   }
@@ -213,11 +218,10 @@ footer {
 
 
 @media screen and (max-width: 576px){
-
   .wrapper {
     width: 275px;
     height: 275px;
-    margin-top: 80px;
+    margin-top: 18vh;
   }
 
   .game {
@@ -235,7 +239,15 @@ footer {
   }
 
   footer {
-    margin-top: 180px;
+    margin-top: 10vh;
+    p {
+      font-size: 10px;
+    }
   }
-  
+}
+
+@media screen and (min-height: 761px) {
+  .wrapper {
+    margin-top: 12vh;
+  }
 }
